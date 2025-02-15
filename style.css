@@ -1,0 +1,119 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    height: 100vh;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+    background-color: #fce4ec;
+  }
+  
+  .container {
+    text-align: center;
+    background: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  }
+  
+  h1 {
+    color: #d81b60;
+  }
+  
+  .message {
+    font-size: 20px;
+    color: #333;
+  }
+  
+  button {
+    padding: 12px 20px;
+    font-size: 16px;
+    margin-top: 20px;
+    background-color: #ec407a;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  button:hover {
+    background-color: #c2185b;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  #surprise {
+    margin-top: 30px;
+  }
+  
+  #surprise h2 {
+    color: #8e24aa;
+  }
+  
+  img {
+    margin-top: 15px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+  }
+  /* Mobile Responsiveness */
+@media (max-width: 600px) {
+    .container {
+      padding: 20px;
+      width: 90%;
+    }
+  
+    button {
+      padding: 10px 15px;
+      font-size: 14px;
+    }
+  
+    img {
+      max-width: 250px;
+    }
+  
+    h1 {
+      font-size: 24px;
+    }
+  
+    .message {
+      font-size: 16px;
+    }
+  }
+
+  
+  /* ------------------------ */
+  /* ❤️ Floating Hearts Style */
+  /* ------------------------ */
+  #hearts-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    overflow: hidden;
+  }
+  
+  .heart {
+    position: absolute;
+    color: #ff69b4;
+    font-size: 24px;
+    animation: float 5s linear infinite;
+  }
+  
+  @keyframes float {
+    0% {
+      transform: translateY(100vh) scale(1);
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(-100vh) scale(0.5);
+      opacity: 0;
+    }
+  }
